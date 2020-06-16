@@ -40,7 +40,7 @@
                                 <tr>
                                   <th>Order Id</th>
                                   <th>Payment Type</th>
-                                  <th>Transection Id</th>
+                                  <th>Payment Id</th>
                                   <th>Subtotal</th>
                                   <th>Total</th>
                                   <th>Date</th>
@@ -52,7 +52,7 @@
                                 <tr>
                                   <th>Order Id</th>
                                   <th>Payment Type</th>
-                                  <th>Transection Id</th>
+                                  <th>Payment Id</th>
                                   <th>Subtotal</th>
                                   <th>Total</th>
                                   <th>Date</th>
@@ -65,7 +65,7 @@
                                   <tr>
                                     <td>{{ $order->product_order_id }}</td>
                                     <td>{{ $order->payment_type }}</td>
-                                    <td>{{ $order->blnc_transection }}</td>
+                                    <td>{{ $order->payment_id }}</td>
                                     <td>{{ $order->subtotal }}</td>
                                     <td>{{ $order->total }}</td>
                                     <td>{{ $order->created_at->diffForHumans() }}</td>

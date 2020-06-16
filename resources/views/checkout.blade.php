@@ -142,12 +142,12 @@
                     <img src="{{ asset('frontend_assets/images/logos_1.png') }}" alt="masert card">
                   </label>
                 </div>
-                {{-- <div class="form-check form-check-inline ml-4">
-                  <input class="form-check-input" type="radio" name="payment" id="payment2" value="visa">
+                <div class="form-check form-check-inline ml-4">
+                  <input class="form-check-input" type="radio" name="payment" id="payment2" value="mollie">
                   <label class="form-check-label" for="payment2">
-                    <img src="{{ asset('frontend_assets/images/logos_2.png') }}" alt="masert card">
+                    <img src="{{ asset('frontend_assets/images/mollie.png') }}" alt="masert card" height="16">
                   </label>
-                </div> --}}
+                </div>
                 {{-- <div class="form-check form-check-inline ml-4">
                   <input class="form-check-input" id="payment3" type="radio" name="payment" value="paypal">
                   <label class="form-check-label" for="payment3">
