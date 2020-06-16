@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
         "laravelcollective/html": "^6.1",
+        "mollie/laravel-mollie": "^2.0",
         "spatie/laravel-newsletter": "^4.8",
         "stripe/stripe-php": "^7.36"
     },
