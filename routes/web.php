@@ -66,6 +66,8 @@ Route::get('checkout','CartController@checkout');
 //PaymentController Routes
 Route::post('payment','PaymentController@addPayment')->name('add.payment');
 Route::post('stripe', 'PaymentController@stripePost')->name('stripe.post');
+Route::get('/mollie','PaymentController@preparePayment')->name('mollie.payment');
+Route::get('/payment-success','PaymentController@paymentSuccess')->name('payment.success');
 
 //ReviewController Routes
 Route::post('review','ReviewController@storeReview');
