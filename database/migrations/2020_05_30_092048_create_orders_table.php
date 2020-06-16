@@ -19,7 +19,7 @@ class CreateOrdersTable extends Migration
             $table->string('payment_type');
             $table->string('payment_id');
             $table->string('paying_amount');
-            $table->string('blnc_transection');
+            $table->string('blnc_transection')->nullable();
             $table->string('product_order_id');
             $table->string('subtotal');
             $table->string('shipping');
