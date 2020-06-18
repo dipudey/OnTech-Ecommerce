@@ -10,15 +10,15 @@ use Illuminate\Queue\SerializesModels;
 class InvoiceMail extends Mailable
 {
     use Queueable, SerializesModels;
-
+    public $order_id;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($order_id)
     {
-        //
+        $this->order_id = $order_id;
     }
 
     /**
@@ -28,6 +28,8 @@ class InvoiceMail extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        $order_id = $this->order_id;
+
+        return $this->from('dipu@gmail.com')->view('mail.invoice_mail',compact('order_id'))->subject("Payment Successfully");
     }
 }
